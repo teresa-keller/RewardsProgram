@@ -1,9 +1,11 @@
 package org.launchcode.RewardsProgram.models;
 
+import java.util.Date;
 import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Purchase {
@@ -13,11 +15,12 @@ public class Purchase {
     private int id;
 
     private double amount;
-    private int date;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date date;
 
     public Purchase() {}
 
-    public Purchase(double amount, int date) {
+    public Purchase(double amount, Date date) {
         this.amount = amount;
         this.date = date;
     }
@@ -38,11 +41,11 @@ public class Purchase {
         this.amount = amount;
     }
 
-    public int getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

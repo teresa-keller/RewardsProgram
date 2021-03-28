@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RewardsProgram\src\main\resources\templates\purchase.html">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
