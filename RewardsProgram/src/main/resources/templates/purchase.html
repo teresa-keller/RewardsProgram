@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Purchase</title>
+</head>
+<body>
+<form action="/points" method="post" name="purchase" id="points">
+    <label>Amount of purchase</label>
+    <input type="number" name="amount" id="amount" />
+    <script src="/js.js"></script>
+    <button id="totalPointsEarned" type="submit" onclick="totalPoints(amount)">Calculate Points!</button>
+</form>
+<p th:text="${totalPointsEarned}">Total Points Earned</p>
+</body>
+</html>
