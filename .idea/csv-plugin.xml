@@ -10,10 +10,38 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\RewardsProgram\src\main\java\org\launchcode\RewardsProgram\models\AbstractEntity.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RewardsProgram\src\main\java\org\launchcode\RewardsProgram\models\Customer.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\RewardsProgram\src\main\java\org\launchcode\RewardsProgram\models\Purchase.java">
           <value>
             <Attribute>
               <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RewardsProgram\src\main\java\org\launchcode\RewardsProgram\models\RewardsPoints.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\RewardsProgram\src\main\resources\application.properties">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
             </Attribute>
           </value>
         </entry>

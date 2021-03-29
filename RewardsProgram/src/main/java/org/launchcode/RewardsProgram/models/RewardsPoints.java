@@ -1,21 +1,38 @@
 package org.launchcode.RewardsProgram.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+import javax.persistence.*;
 
 @Entity
-public class RewardsPoints {
+@Table(name = "rewardsPoints")
+public class RewardsPoints extends AbstractEntity{
 
-    @Id
-    @GeneratedValue
-    private int id;
+//    @OneToMany(mappedBy = "purchase", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    private final List<RewardsPoints> points = new ArrayList<>();
 
-    private int points;
 
     public RewardsPoints() {}
-    public RewardsPoints(int points) {
-        this.points = points;
+
+    public RewardsPoints(List<RewardsPoints> points) {
     }
 
+//    public List<RewardsPoints> getPoints() {
+//        return points;
+//    }
+
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof RewardsPoints)) return false;
+//        RewardsPoints that = (RewardsPoints) o;
+//        return getId() == that.getId() && Objects.equals(getPoints(), that.getPoints());
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(getId(), getPoints());
+//    }
 }

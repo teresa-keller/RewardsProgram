@@ -14,7 +14,7 @@
     </label></div>
     <button type="submit">Calculate Points!</button>
 </form>
-<!--<script src="/js.js" onsubmit="totalPoints(purchase.amount)"></script>-->
+<script id="totalPoints" th:src="@{script.js}" onsubmit="totalPoints(purchase.amount)"></script>
 <p>Total Points Earned</p>
 </body>
 </html>
