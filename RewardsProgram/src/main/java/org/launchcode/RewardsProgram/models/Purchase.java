@@ -9,9 +9,9 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Table(name = "purchase")
 public class Purchase extends AbstractEntity{
 
-    @ManyToOne(fetch = FetchType.LAZY)
+//    @ManyToOne
 //    @JoinColumn(name = "rewardsPoints_id",referencedColumnName = "id",nullable = false,unique = true)
-    private RewardsPoints points;
+//    private RewardsPoints points;
 
     private double amount;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
@@ -19,17 +19,17 @@ public class Purchase extends AbstractEntity{
 
     public Purchase() {}
 
-    public Purchase(double amount, Date date, RewardsPoints points) {
+    public Purchase(double amount, Date date) {
         this.amount = amount;
         this.date = date;
-        this.points = points;
+//        this.points = points;
     }
 
     public String totalPoints(double amount) {
         double firstHundred = 0;
         double onePointTotal = 0;
         double extra = 0;
-       double twoPointsTotal = 0;
+        double twoPointsTotal = 0;
         double points = 0;
         if (amount < 50) {
             return "No points earned.";
@@ -63,13 +63,13 @@ public class Purchase extends AbstractEntity{
         this.date = date;
     }
 
-    public RewardsPoints getPoints() {
-        return points;
-    }
-
-    public void setPoints(RewardsPoints points) {
-        this.points = points;
-    }
+//    public RewardsPoints getPoints() {
+//        return points;
+//    }
+//
+//    public void setPoints(RewardsPoints points) {
+//        this.points = points;
+//    }
 
     @Override
     public boolean equals(Object o) {
