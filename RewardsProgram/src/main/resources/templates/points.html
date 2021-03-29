@@ -6,7 +6,8 @@
 </head>
 <body>
 
-    <script th:src="@{/script.js/}"></script>
-    <p th:text="${purchase.amount}"></p>
+    <div>
+        <p th:text="${purchase.totalPoints(purchase.amount)}"></p>
+    </div>
 </body>
 </html>

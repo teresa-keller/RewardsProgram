@@ -25,6 +25,28 @@ public class Purchase extends AbstractEntity{
         this.points = points;
     }
 
+    public String totalPoints(double amount) {
+        double firstHundred = 0;
+        double onePointTotal = 0;
+        double extra = 0;
+       double twoPointsTotal = 0;
+        double points = 0;
+        if (amount < 50) {
+            return "No points earned.";
+        } else if (amount >= 50 && amount < 100) {
+            firstHundred = amount - 50;
+
+        } else {
+            firstHundred = 50;
+            extra = amount - 100;
+        }
+        onePointTotal = firstHundred * 1;
+        twoPointsTotal = extra * 2;
+        points = onePointTotal + twoPointsTotal;
+
+        return "You have earned " + points + "points.";
+    }
+
     public double getAmount() {
         return amount;
     }
