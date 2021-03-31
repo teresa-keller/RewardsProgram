@@ -7,7 +7,8 @@
 <body>
 
     <div>
-        <p th:text="${purchase.totalPoints(purchase.amount)}"></p>
+        <p>Total Points Earned</p>
+        <p id="totalPoints" th:text="${purchase.totalPoints(purchase.amount)}"></p>
     </div>
 </body>
 </html>

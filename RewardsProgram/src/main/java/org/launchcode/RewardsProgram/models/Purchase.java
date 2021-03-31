@@ -29,7 +29,7 @@ public class Purchase extends AbstractEntity{
         double firstHundred = 0;
         double onePointTotal = 0;
         double extra = 0;
-       double twoPointsTotal = 0;
+        double twoPointsTotal = 0;
         double points = 0;
         if (amount < 50) {
             return "No points earned.";
